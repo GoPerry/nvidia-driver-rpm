@@ -1,0 +1,550 @@
+NVIDIA Accelerated Graphics Driver for Linux-x86_64
+367.44
+ 
+nvidia nvidia-uvm nvidia-modeset nvidia-drm
+ 
+ 
+./kernel/
+./kernel/precompiled/
+kernel/nvidia/nv-kernel.o_binary 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-acpi.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-chrdev.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-cray.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-dma.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-gvi.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-i2c.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-mempool.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-mmap.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-p2p.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-pat.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-procfs.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-usermap.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-vm.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-vtophys.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/os-interface.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/os-mlock.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/os-pci.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/os-registry.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/os-usermap.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-modeset-interface.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-pci-table.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/conftest.sh 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-pgprot.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-mm.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-list-helpers.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-linux.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-procfs.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-memdbg.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-misc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-p2p.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-proto.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-reg.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/os-interface.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv_gpu_ops.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/conftest.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-modeset-interface.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvCpuUuid.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-pci-table.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-gpu-info.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv_uvm_interface.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv_uvm_interface.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv_uvm_types.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/cpuopsys.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvtypes.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvstatus.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvstatuscodes.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvgputypes.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvmisc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/rmil.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/rmp2pdefines.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/xapi-sdk.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-hypervisor.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/Makefile 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvidia.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/dkms.conf 0644 DKMS_CONF INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvidia-sources.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_pci.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_linux.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_common.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_proto.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_errors.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_pci.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nvlink_export.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/ibmnpu_export.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/ebridge_export.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/ebridge_linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/ibmnpu_linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-frontend.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-frontend.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nv-register-module.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-instance.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia/nv-instance.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+libnvidia-glcore.so.367.44 0755 OPENGL_LIB NATIVE
+libglx.so.367.44 0755 GLX_MODULE_SHARED_LIB extensions
+libglx.so 0000 GLX_MODULE_SYMLINK extensions/ libglx.so.367.44
+libnvidia-tls.so.367.44 0755 TLS_LIB NATIVE CLASSIC /
+tls/libnvidia-tls.so.367.44 0755 TLS_LIB NATIVE NEW tls/
+libGL.la 0644 LIBGL_LA NATIVE
+nvidia_icd.json 0644 VULKAN_ICD_JSON
+gl.h 0444 OPENGL_HEADER GL/
+glext.h 0444 OPENGL_HEADER GL/
+glx.h 0444 OPENGL_HEADER GL/
+glxext.h 0444 OPENGL_HEADER GL/
+nvidia-application-profiles-367.44-rc 0444 APPLICATION_PROFILE /
+nvidia-application-profiles-367.44-key-documentation 0444 APPLICATION_PROFILE /
+libGL.so.367.44 0755 GLX_CLIENT_LIB NATIVE NON_GLVND
+libGL.so.1 0000 GLX_CLIENT_SYMLINK NATIVE libGL.so.367.44 NON_GLVND
+libGL.so 0000 GLX_CLIENT_SYMLINK NATIVE libGL.so.1 NON_GLVND
+libGLX_nvidia.so.367.44 0755 OPENGL_LIB NATIVE
+libGLX_nvidia.so.0 0000 OPENGL_SYMLINK NATIVE libGLX_nvidia.so.367.44
+libGLX_indirect.so.0 0000 OPENGL_SYMLINK NATIVE libGLX_nvidia.so.367.44
+libOpenGL.so.0 0755 GLVND_LIB NATIVE
+libOpenGL.so 0000 GLVND_SYMLINK NATIVE libOpenGL.so.0
+libGLESv1_CM.so.1 0755 GLVND_LIB NATIVE
+libGLESv1_CM.so 0000 GLVND_SYMLINK NATIVE libGLESv1_CM.so.1
+libGLESv2.so.2 0755 GLVND_LIB NATIVE
+libGLESv2.so 0000 GLVND_SYMLINK NATIVE libGLESv2.so.2
+libGLdispatch.so.0 0755 GLVND_LIB NATIVE
+libGLX.so.0 0755 GLX_CLIENT_LIB NATIVE GLVND
+libGLX.so 0000 GLX_CLIENT_SYMLINK NATIVE libGLX.so.0 GLVND
+libGL.so.1.0.0 0755 GLX_CLIENT_LIB NATIVE GLVND
+libGL.so.1 0000 GLX_CLIENT_SYMLINK NATIVE libGL.so.1.0.0 GLVND
+libGL.so 0000 GLX_CLIENT_SYMLINK NATIVE libGL.so.1 GLVND
+libEGL.so.1 0755 OPENGL_LIB NATIVE
+libEGL.so 0000 OPENGL_SYMLINK NATIVE libEGL.so.1
+nvidia_drv.so 0755 XMODULE_SHARED_LIB drivers/
+libnvidia-wfb.so.367.44 0755 XMODULE_SHARED_LIB /
+libnvidia-wfb.so.1 0000 XMODULE_SYMLINK / libnvidia-wfb.so.367.44
+libwfb.so 0000 XMODULE_NEWSYM / libnvidia-wfb.so.1
+nvidia-drm-outputclass.conf 0444 XORG_OUTPUTCLASS_CONFIG
+nvidia-settings.png 0444 DOCUMENTATION NVIDIA_GLX-1.0/
+nvidia-settings.desktop 0444 DOT_DESKTOP NVIDIA_GLX-1.0/
+nvidia-xconfig 0755 UTILITY_BINARY
+nvidia-xconfig.1.gz 0444 MANPAGE man1/
+nvidia-settings 0755 UTILITY_BINARY
+libnvidia-gtk2.so.367.44 0755 UTILITY_LIB NATIVE
+libnvidia-gtk3.so.367.44 0755 UTILITY_LIB NATIVE
+nvidia-settings.1.gz 0444 MANPAGE man1/
+NVIDIA_Changelog 0444 DOCUMENTATION NVIDIA_GLX-1.0/
+LICENSE 0444 DOCUMENTATION NVIDIA_GLX-1.0/
+nvidia-bug-report.sh 0755 UTILITY_BINARY
+nvidia-installer.1.gz 0444 MANPAGE man1/
+nvidia-installer 0755 INSTALLER_BINARY
+nvidia-uninstall 0000 UTILITY_BIN_SYMLINK nvidia-installer
+nvidia-modprobe 04755 NVIDIA_MODPROBE /usr/bin/
+nvidia-modprobe.1.gz 0444 NVIDIA_MODPROBE_MANPAGE man1/
+libnvidia-cfg.so.367.44 0755 UTILITY_LIB NATIVE
+libnvidia-cfg.so.1 0000 UTILITY_LIB_SYMLINK NATIVE libnvidia-cfg.so.367.44
+libnvidia-cfg.so 0000 UTILITY_LIB_SYMLINK NATIVE libnvidia-cfg.so.1
+README.txt 0444 DOCUMENTATION NVIDIA_GLX-1.0/
+nvidia-smi 0755 UTILITY_BINARY
+nvidia-smi.1.gz 0444 MANPAGE man1/
+libnvidia-ml.so.367.44 0755 CUDA_LIB NATIVE /
+libnvidia-ml.so.1 0000 CUDA_SYMLINK NATIVE / libnvidia-ml.so.367.44
+libnvidia-ml.so 0000 CUDA_SYMLINK NATIVE / libnvidia-ml.so.1
+nvidia-debugdump 0755 UTILITY_BINARY
+libvdpau_nvidia.so.367.44 0755 VDPAU_LIB NATIVE vdpau/
+libvdpau_nvidia.so.1 0000 VDPAU_SYMLINK NATIVE vdpau/ libvdpau_nvidia.so.367.44
+libvdpau_nvidia.so 0000 VDPAU_SYMLINK NATIVE / vdpau/libvdpau_nvidia.so.367.44
+libcuda.so.367.44 0755 CUDA_LIB NATIVE /
+libcuda.so.1 0000 CUDA_SYMLINK NATIVE / libcuda.so.367.44
+libcuda.so 0000 CUDA_SYMLINK NATIVE / libcuda.so.1
+libnvidia-opencl.so.367.44 0755 OPENCL_LIB NATIVE /
+libnvidia-opencl.so.1 0000 OPENCL_LIB_SYMLINK NATIVE / libnvidia-opencl.so.367.44
+libOpenCL.so.1.0.0 0755 OPENCL_WRAPPER_LIB NATIVE /
+libOpenCL.so.1.0 0000 OPENCL_WRAPPER_SYMLINK NATIVE / libOpenCL.so.1.0.0
+libOpenCL.so.1 0000 OPENCL_WRAPPER_SYMLINK NATIVE / libOpenCL.so.1.0
+libOpenCL.so 0000 OPENCL_WRAPPER_SYMLINK NATIVE / libOpenCL.so.1
+nvidia.icd 0444 CUDA_ICD
+nvidia-cuda-mps-control 0755 UTILITY_BINARY
+nvidia-cuda-mps-server 0755 UTILITY_BINARY
+nvidia-cuda-mps-control.1.gz 0444 MANPAGE man1/
+libnvidia-fatbinaryloader.so.367.44 0755 CUDA_LIB NATIVE /
+libnvidia-ptxjitcompiler.so.367.44 0755 CUDA_LIB NATIVE /
+libnvcuvid.so.367.44 0755 NVCUVID_LIB NATIVE
+libnvcuvid.so.1 0000 NVCUVID_LIB_SYMLINK NATIVE libnvcuvid.so.367.44
+libnvcuvid.so 0000 NVCUVID_LIB_SYMLINK NATIVE libnvcuvid.so.1
+libnvidia-encode.so.367.44 0755 ENCODEAPI_LIB NATIVE
+libnvidia-encode.so.1 0000 ENCODEAPI_LIB_SYMLINK NATIVE libnvidia-encode.so.367.44
+libnvidia-encode.so 0000 ENCODEAPI_LIB_SYMLINK NATIVE libnvidia-encode.so.1
+libnvidia-ifr.so.367.44 0755 NVIFR_LIB NATIVE
+libnvidia-ifr.so.1 0000 NVIFR_LIB_SYMLINK NATIVE libnvidia-ifr.so.367.44
+libnvidia-ifr.so 0000 NVIFR_LIB_SYMLINK NATIVE libnvidia-ifr.so.1
+libnvidia-fbc.so.367.44 0755 UTILITY_LIB NATIVE
+libnvidia-fbc.so.1 0000 UTILITY_LIB_SYMLINK NATIVE libnvidia-fbc.so.367.44
+libnvidia-fbc.so 0000 UTILITY_LIB_SYMLINK NATIVE libnvidia-fbc.so.1
+nvidia-persistenced-init.tar.bz2 0444 DOCUMENTATION NVIDIA_GLX-1.0/sample
+nvidia-persistenced.1.gz 0444 MANPAGE man1/
+nvidia-persistenced 0755 UTILITY_BINARY
+kernel/nvidia-uvm/uvm_utils.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_common.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_debug_optimized.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_stubs.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_kepler.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_maxwell.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_pascal.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_channel_mgmt.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nvstatus.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_unsupported.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nv-kthread-q.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nv-kthread-q-selftest.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_utils.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_common.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_minimal_init.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_linux.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_next.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_kepler.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_maxwell.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_migration_pascal.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_channel_mgmt.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nv-kthread-q.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm-debug.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_events.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_unit_test.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_ioctl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_linux_ioctl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/uvmtypes.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/cla06f.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/cla16f.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clb06f.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clc06f.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/cla06fsubch.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/cla0b5.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clb0b5.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clc0b5.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clc1b5.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/ctrl2080mc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/hwref/pascal/gp100/dev_mmu.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/hwref/kepler/gk104/dev_mmu.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/hwref/pascal/gp100/dev_master.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/hwref/pascal/gp100/dev_fault.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/hwref/pascal/gp100/dev_fb.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nvidia-uvm.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/nvidia-uvm-sources.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_common_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_common_test.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_channel_directed_tests.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_channel_basic_sanity_tests.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_kernel_events.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_kernel_events.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_kernel_counters.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_kernel_counters.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_debug_session.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_debug_session.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_gpu_ops_tests.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_page_cache.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite_api.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite_prefetch.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite_region_tracking.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_gpu_ops_tests.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite_prefetch.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_lite_region_tracking.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt_pascal.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt_next.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt_stubs.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_mmu_mgmt_pascal.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_full_fault_buffer.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_full_fault_buffer.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_full_fault_buffer_pascal.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_full_fault_buffer_pascal.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clb069.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clb069sw.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm_pascal_fault_ref.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/mmu/mmu_fmt.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/mmu_fmt.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/mmu/gmmu_fmt.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/gmmu_fmt.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/field_desc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/compat.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/clc076.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_init.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tools_init.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tools.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tools.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_global.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_global.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_procfs.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_procfs.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_space.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_space.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu_semaphore.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu_semaphore.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mem.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mem.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_rm_mem.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_rm_mem.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_channel.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_channel.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_lock.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_lock.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_api.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_hal.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_hal.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_hal_types.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_forward_decl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_processors.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_tree.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_tree.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_allocator.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_allocator.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_range.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_range.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_block.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_block_types.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_block.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_group.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_group.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu_page_fault.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu_page_fault.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_events.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_events.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_module.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_module.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mmu.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mmu.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pte_batch.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pte_batch.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tlb_batch.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tlb_batch.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_push_macros.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_push.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_push.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pushbuffer.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pushbuffer.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_thread_context.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_thread_context.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tracker.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tracker.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kepler.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kepler_ce.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kepler_host.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kepler_mmu.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_maxwell.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_maxwell_host.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal_ce.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal_host.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal_mmu.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal_fault_buffer.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pascal_fault_buffer.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_policy.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_utils.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_utils.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kvmalloc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kvmalloc.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pmm_gpu.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pmm_gpu.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_migrate.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_map_external.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_map_external.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_user_channel.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_user_channel.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_next_decl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_hmm.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_hmm.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_heuristics.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_heuristics.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_thrashing.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_thrashing.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_prefetch.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_prefetch.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_test.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_test_rng.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_test_rng.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_tree_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_allocator_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_gpu_semaphore_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mem_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_rm_mem_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_page_tree_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_tracker_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_push_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_channel_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_ce_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_lock_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_utils_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_kvmalloc_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_pmm_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_events_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_perf_module_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_get_rm_ptes_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_fault_buffer_flush_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_mmu_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_peer_identity_mappings_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_va_block_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_range_group_tree_test.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-uvm/uvm8_test_ioctl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+libnvidia-compiler.so.367.44 0755 CUDA_LIB NATIVE /
+libnvidia-eglcore.so.367.44 0755 OPENGL_LIB NATIVE
+libnvidia-glsi.so.367.44 0755 OPENGL_LIB NATIVE
+libEGL_nvidia.so.367.44 0755 OPENGL_LIB NATIVE
+libEGL_nvidia.so.0 0000 OPENGL_SYMLINK NATIVE libEGL_nvidia.so.367.44
+libGLESv2_nvidia.so.367.44 0755 OPENGL_LIB NATIVE
+libGLESv2_nvidia.so.2 0000 OPENGL_SYMLINK NATIVE libGLESv2_nvidia.so.367.44
+libGLESv1_CM_nvidia.so.367.44 0755 OPENGL_LIB NATIVE
+libGLESv1_CM_nvidia.so.1 0000 OPENGL_SYMLINK NATIVE libGLESv1_CM_nvidia.so.367.44
+libnvidia-egl-wayland.so.367.44 0755 OPENGL_LIB NATIVE
+kernel/nvidia-modeset/nv-modeset-kernel.o_binary 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-modeset/nvidia-modeset.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-modeset/nvidia-modeset-linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-modeset/nvidia-modeset-os-interface.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-modeset/nvkms.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-modeset/nvkms-ioctl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvkms-api-types.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvkms-kapi.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/common/inc/nvkms-kapi-user.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-priv.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-connector.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-crtc.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-drv.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-encoder.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-fb.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-gem.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-mmap.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-modeset.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-utils.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-os-interface.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-ioctl.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-drv.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-utils.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-crtc.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-encoder.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-connector.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-gem.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-fb.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-modeset.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-mmap.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm.Kbuild 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nvidia-drm-linux.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nv-pci-table.c 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+kernel/nvidia-drm/nv-pci-table.h 0644 KERNEL_MODULE_SRC INHERIT_PATH_DEPTH:1
+html/acknowledgements.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/addressingcapabilities.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/addtlresources.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/appendices.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/audiosupport.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/commonproblems.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/configlaptop.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/configmultxscreens.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/configtwinview.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/depth30.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/displaydevicenames.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/gpunames.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/dma_issues.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/dpi.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/editxconfig.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/faq.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/flippingubb.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/framelock.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/glxsupport.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/i2c.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/index.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/installationandconfiguration.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/installdriver.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/installedcomponents.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/introduction.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/kms.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/knownissues.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/minimumrequirements.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/newusertips.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/nvidia-debugdump.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/nvidia-ml.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/nvidia-persistenced.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/nvidia-smi.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/nvidiasettings.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/openglenvvariables.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/optimus.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/powermanagement.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/procinterface.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/profiles.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/programmingmodes.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/randr14.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/sdi.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/selectdriver.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/sli.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/supportedchips.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/vdpausupport.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/xcompositeextension.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/xconfigoptions.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/xineramaglx.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+html/xrandrextension.html 0444 DOCUMENTATION NVIDIA_GLX-1.0/html
+./32/libcuda.so.367.44 0755 CUDA_LIB COMPAT32 /
+libcuda.so.1 0000 CUDA_SYMLINK COMPAT32 / libcuda.so.367.44
+libcuda.so 0000 CUDA_SYMLINK COMPAT32 / libcuda.so.1
+./32/libnvidia-fatbinaryloader.so.367.44 0755 CUDA_LIB COMPAT32 /
+./32/libnvidia-ptxjitcompiler.so.367.44 0755 CUDA_LIB COMPAT32 /
+./32/libnvidia-ml.so.367.44 0755 CUDA_LIB COMPAT32 /
+libnvidia-ml.so.1 0000 CUDA_SYMLINK COMPAT32 / libnvidia-ml.so.367.44
+libnvidia-ml.so 0000 CUDA_SYMLINK COMPAT32 / libnvidia-ml.so.1
+./32/libOpenCL.so.1.0.0 0755 OPENCL_WRAPPER_LIB COMPAT32 /
+libOpenCL.so.1.0 0000 OPENCL_WRAPPER_SYMLINK COMPAT32 / libOpenCL.so.1.0.0
+libOpenCL.so.1 0000 OPENCL_WRAPPER_SYMLINK COMPAT32 / libOpenCL.so.1.0
+libOpenCL.so 0000 OPENCL_WRAPPER_SYMLINK COMPAT32 / libOpenCL.so.1
+./32/libnvidia-compiler.so.367.44 0755 CUDA_LIB COMPAT32 /
+./32/libnvidia-opencl.so.367.44 0755 OPENCL_LIB COMPAT32 /
+libnvidia-opencl.so.1 0000 OPENCL_LIB_SYMLINK COMPAT32 / libnvidia-opencl.so.367.44
+./32/libOpenGL.so.0 0755 GLVND_LIB COMPAT32
+libOpenGL.so 0000 GLVND_SYMLINK COMPAT32 libOpenGL.so.0
+./32/libGLdispatch.so.0 0755 GLVND_LIB COMPAT32
+./32/libGLESv2.so.2 0755 GLVND_LIB COMPAT32
+libGLESv2.so 0000 GLVND_SYMLINK COMPAT32 libGLESv2.so.2
+./32/libGLESv1_CM.so.1 0755 GLVND_LIB COMPAT32
+libGLESv1_CM.so 0000 GLVND_SYMLINK COMPAT32 libGLESv1_CM.so.1
+./32/libGL.so.1.0.0 0755 GLX_CLIENT_LIB COMPAT32 GLVND
+libGL.so.1 0000 GLX_CLIENT_SYMLINK COMPAT32 libGL.so.1.0.0 GLVND
+libGL.so 0000 GLX_CLIENT_SYMLINK COMPAT32 libGL.so.1 GLVND
+./32/libGL.so.367.44 0755 GLX_CLIENT_LIB COMPAT32 NON_GLVND
+libGL.so.1 0000 GLX_CLIENT_SYMLINK COMPAT32 libGL.so.367.44 NON_GLVND
+libGL.so 0000 GLX_CLIENT_SYMLINK COMPAT32 libGL.so.1 NON_GLVND
+./32/libGLX_nvidia.so.367.44 0755 OPENGL_LIB COMPAT32
+libGLX_nvidia.so.0 0000 OPENGL_SYMLINK COMPAT32 libGLX_nvidia.so.367.44
+./32/libGLX.so.0 0755 GLX_CLIENT_LIB COMPAT32 GLVND
+libGLX.so 0000 GLX_CLIENT_SYMLINK COMPAT32 libGLX.so.0 GLVND
+libGLX_indirect.so.0 0000 OPENGL_SYMLINK COMPAT32 libGLX_nvidia.so.367.44
+./32/libnvidia-glcore.so.367.44 0755 OPENGL_LIB COMPAT32
+./32/libGL.la 0644 LIBGL_LA COMPAT32
+./32/libnvidia-tls.so.367.44 0755 TLS_LIB COMPAT32 CLASSIC /
+./32/tls/libnvidia-tls.so.367.44 0755 TLS_LIB COMPAT32 NEW tls/
+./32/libvdpau_nvidia.so.367.44 0755 VDPAU_LIB COMPAT32 vdpau/
+libvdpau_nvidia.so.1 0000 VDPAU_SYMLINK COMPAT32 vdpau/ libvdpau_nvidia.so.367.44
+libvdpau_nvidia.so 0000 VDPAU_SYMLINK COMPAT32 / vdpau/libvdpau_nvidia.so.367.44
+./32/libnvcuvid.so.367.44 0755 NVCUVID_LIB COMPAT32
+libnvcuvid.so.1 0000 NVCUVID_LIB_SYMLINK COMPAT32 libnvcuvid.so.367.44
+libnvcuvid.so 0000 NVCUVID_LIB_SYMLINK COMPAT32 libnvcuvid.so.1
+./32/libnvidia-encode.so.367.44 0755 ENCODEAPI_LIB COMPAT32
+libnvidia-encode.so.1 0000 ENCODEAPI_LIB_SYMLINK COMPAT32 libnvidia-encode.so.367.44
+libnvidia-encode.so 0000 ENCODEAPI_LIB_SYMLINK COMPAT32 libnvidia-encode.so.1
+./32/libnvidia-eglcore.so.367.44 0755 OPENGL_LIB COMPAT32
+./32/libnvidia-glsi.so.367.44 0755 OPENGL_LIB COMPAT32
+./32/libEGL.so.1 0755 OPENGL_LIB COMPAT32
+libEGL.so 0000 OPENGL_SYMLINK COMPAT32 libEGL.so.1
+./32/libEGL_nvidia.so.367.44 0755 OPENGL_LIB COMPAT32
+libEGL_nvidia.so.0 0000 OPENGL_SYMLINK COMPAT32 libEGL_nvidia.so.367.44
+./32/libGLESv2_nvidia.so.367.44 0755 OPENGL_LIB COMPAT32
+libGLESv2_nvidia.so.2 0000 OPENGL_SYMLINK COMPAT32 libGLESv2_nvidia.so.367.44
+./32/libGLESv1_CM_nvidia.so.367.44 0755 OPENGL_LIB COMPAT32
+libGLESv1_CM_nvidia.so.1 0000 OPENGL_SYMLINK COMPAT32 libGLESv1_CM_nvidia.so.367.44
+./32/libnvidia-ifr.so.367.44 0755 NVIFR_LIB COMPAT32
+libnvidia-ifr.so.1 0000 NVIFR_LIB_SYMLINK COMPAT32 libnvidia-ifr.so.367.44
+libnvidia-ifr.so 0000 NVIFR_LIB_SYMLINK COMPAT32 libnvidia-ifr.so.1
+./32/libnvidia-fbc.so.367.44 0755 UTILITY_LIB COMPAT32
+libnvidia-fbc.so.1 0000 UTILITY_LIB_SYMLINK COMPAT32 libnvidia-fbc.so.367.44
+libnvidia-fbc.so 0000 UTILITY_LIB_SYMLINK COMPAT32 libnvidia-fbc.so.1

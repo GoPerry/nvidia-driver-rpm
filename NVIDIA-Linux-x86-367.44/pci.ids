@@ -1,0 +1,27 @@
+#
+#       List of NVIDIA’s PCI ID's
+#
+# Vendors, devices and subsystems. Please keep sorted.
+#
+# Syntax:
+# vendor  vendor_name
+#       device  device_name                             <-- single tab
+#               subvendor subdevice  subsystem_name     <-- two tabs
+
+10de  NVIDIA Corporation
+	0fe7  GK107GL [GRID K1]
+		10de 101e  GRID K100
+	0ff2  GK107GL [GRID K1]
+	0ff7  GK107GL [Quadro K1 USM]
+		10de 1037  GRID K140Q
+		10de 109c  GRID K120Q
+		10de 113b  GRID K160Q
+		10de 113c  GRID K180Q
+	118d  GK104GL [GRID K2]
+		10de 101d  GRID K200
+	11b0  GK104GL [Quadro K2 USM]
+		10de 101a  GRID K240Q
+		10de 101b  GRID K260Q
+		10de 113d  GRID K280Q
+		10de 109d  GRID K220Q
+	11bf  GK104GL [GRID K2]

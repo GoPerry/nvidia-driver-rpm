@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org">
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii">
+<title>Chapter&nbsp;10.&nbsp;Allocating DMA Buffers on 64-bit
+Platforms</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.68.1">
+<link rel="start" href="index.html" title=
+"NVIDIA Accelerated Linux Graphics Driver README and Installation Guide">
+<link rel="up" href="installationandconfiguration.html" title=
+"Part&nbsp;I.&nbsp;Installation and Configuration Instructions">
+<link rel="prev" href="knownissues.html" title=
+"Chapter&nbsp;9.&nbsp;Known Issues">
+<link rel="next" href="openglenvvariables.html" title=
+"Chapter&nbsp;11.&nbsp;Specifying OpenGL Environment Variable Settings">
+</head>
+<body>
+<div class="navheader">
+<table width="100%" summary="Navigation header">
+<tr>
+<th colspan="3" align="center">Chapter&nbsp;10.&nbsp;Allocating DMA
+Buffers on 64-bit Platforms</th>
+</tr>
+<tr>
+<td width="20%" align="left"><a accesskey="p" href=
+"knownissues.html">Prev</a>&nbsp;</td>
+<th width="60%" align="center">Part&nbsp;I.&nbsp;Installation and
+Configuration Instructions</th>
+<td width="20%" align="right">&nbsp;<a accesskey="n" href=
+"openglenvvariables.html">Next</a></td>
+</tr>
+</table>
+<hr></div>
+<div class="chapter" lang="en">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="dma_issues" id=
+"dma_issues"></a>Chapter&nbsp;10.&nbsp;Allocating DMA Buffers on
+64-bit Platforms</h2>
+</div>
+</div>
+</div>
+<p>NVIDIA GPUs have limits on how much physical memory they can
+address. This directly impacts DMA buffers, as a DMA buffer
+allocated in physical memory that is unaddressable by the NVIDIA
+GPU cannot be used (or may be truncated, resulting in bad memory
+accesses). See <a href="addressingcapabilities.html" title=
+"Chapter&nbsp;34.&nbsp;Addressing Capabilities">Chapter&nbsp;34,
+<i>Addressing Capabilities</i></a> for details on the addressing
+limitations of specific GPUs.</p>
+<p>Newer kernels provide a simple way to allocate memory that is
+guaranteed to reside within the 32 bit physical address space.
+Linux 2.6.15 provides this functionality with the __GFP_DMA32
+interface. Kernels earlier than this version provide a software I/O
+TLB on Intel's EM64T and IOMMU support on AMD's AMD64 platform.</p>
+<p>Unfortunately, some problems exist with both interfaces. Early
+implementations of the Linux SWIOTLB set aside a very small amount
+of memory for its memory pool (only 4 MB). Also, when this memory
+pool is exhausted, some SWIOTLB implementations forcibly panic the
+kernel. This is also true for some implementations of the IOMMU
+interface.</p>
+<p>The NVIDIA Linux driver does not support the SWIOTLB. NVIDIA
+recommends that users of Intel's EM64T platform upgrade to Linux
+2.6.11 or a more recent Linux kernel.</p>
+<p>On AMD's AMD64 platform, the size of the IOMMU can be configured
+in the system BIOS or, if no IOMMU BIOS option is available, using
+the 'iommu=memaper' kernel parameter. This kernel parameter expects
+an order and instructs the Linux kernel to create an IOMMU of size
+32 MB^order overlapping physical memory. If the system's default
+IOMMU is smaller than 64 MB, the Linux kernel automatically
+replaces it with a 64 MB IOMMU.</p>
+<p>To reduce the risk of stability problems as a result of IOMMU
+space exhaustion on the X86-64 platform, the NVIDIA Linux driver
+internally limits its use of these interfaces. By default, the
+driver will not use more than 60 MB of IOMMU space, leaving at
+least 4 MB for the rest of the system (assuming a 64 MB IOMMU).</p>
+<p>This limit can be adjusted with the 'NVreg_RemapLimit' NVIDIA
+kernel module option. Specifically, if the IOMMU is larger than 64
+MB, the limit can be adjusted to take advantage of the additional
+space. The 'NVreg_RemapLimit' option expects the size argument in
+bytes.</p>
+<p>NVIDIA recommends leaving 4 MB available for the rest of the
+system when changing the limit. For example, if the internal limit
+is to be relaxed to account for a 128 MB IOMMU, the recommended
+remap limit is 124 MB. This remap limit can be specified by passing
+'NVreg_RemapLimit=0x7c00000' to the NVIDIA kernel module.</p>
+<p>Also see the 'The X86-64 platform (AMD64/EM64T) and early Linux
+2.6 kernels' section in <a href=
+"knownissues.html#x86_64_platform">The X86-64 platform
+(AMD64/EM64T) and early Linux 2.6 kernels</a>.</p>
+</div>
+<div class="navfooter">
+<hr>
+<table width="100%" summary="Navigation footer">
+<tr>
+<td width="40%" align="left"><a accesskey="p" href=
+"knownissues.html">Prev</a>&nbsp;</td>
+<td width="20%" align="center"><a accesskey="u" href=
+"installationandconfiguration.html">Up</a></td>
+<td width="40%" align="right">&nbsp;<a accesskey="n" href=
+"openglenvvariables.html">Next</a></td>
+</tr>
+<tr>
+<td width="40%" align="left" valign="top">
+Chapter&nbsp;9.&nbsp;Known Issues&nbsp;</td>
+<td width="20%" align="center"><a accesskey="h" href=
+"index.html">Home</a></td>
+<td width="40%" align="right" valign="top">
+&nbsp;Chapter&nbsp;11.&nbsp;Specifying OpenGL Environment Variable
+Settings</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
